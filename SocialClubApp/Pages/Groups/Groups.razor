@@ -1,0 +1,51 @@
+﻿@page "/groups"
+<h4>Ваши объеденения</h4>
+<hr />
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FeedsDataLayer.FeedViewModel
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+@if (groups == null)
+{
+    <div class="container">
+        <p> Вы еще не присоеденились ни к одному обьеденению</p>
+        <a href="/connectGroup" class="btn btn-outline-secondary">Присоеденится !</a>
+    </div>
+
+}
+else
+{
+    <div class="container">
+        @foreach (var group in groups)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        @group.NameGroup
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+
+
+@code {
+    UserModel currentUser;
+    FriendsAndSocailDataLayer.Models.GroupConnect[] groupsConnectUser;
+    FriendsAndSocailDataLayer.Models.GroupModel[] groups;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        groupsConnectUser = await socialServ.GetGroupIdsByUser(currentUser);
+
+    }
+}

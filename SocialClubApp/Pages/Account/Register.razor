@@ -1,0 +1,124 @@
+﻿@page "/Account/Register"
+@using System.Web;
+@using System.Net.Http
+@using AuthDataLayer.ViewModels
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.IAuthService authServ
+@inject  SocialClubApp.Services.FilesService fileServ
+    <div class="container">
+        <div class="row">
+            <div class="col-4 mx-auto">
+
+                <EditForm Model="@userModel" OnValidSubmit="Registering">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary Model="@userModel" />
+
+
+
+                    <div class="form-group">
+                        <label class="control-label">Введите логин</label>
+                        <InputText @onfocusout="checkLogin" @bind-Value="userModel.Login" class="form-control" />
+                        <ValidationMessage For="@(() => userModel.Login)" />
+                        <p style="@styleData">@loginStatus</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Введите имя</label>
+                        <InputText @bind-Value="userModel.Name" class="form-control" />
+                        <ValidationMessage For="@(() => userModel.Name)" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Введите фамилию</label>
+                        <InputText @bind-Value="userModel.Surname" class="form-control" />
+                        <ValidationMessage For="@(() => userModel.Surname)" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Введите возраст</label>
+                        <InputText @bind-Value="userModel.Age" class="form-control" type="number" />
+                        <ValidationMessage For="@(() => userModel.Age)" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Введите почту</label>
+                        <InputText @bind-Value="userModel.Email" class="form-control" />
+                        <ValidationMessage For="@(() => userModel.Email)" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Введите пароль</label>
+                        <InputText @bind-Value="userModel.Password" class="form-control" type="password" />
+                        <ValidationMessage For="@(() => userModel.Password)" />
+                    </div>
+                    <div class="form-group">
+                        <InputFile OnChange="HandleSelection" />
+                        <p>@fileStatys</p>
+                    </div>
+                    <button class="ml-md-auto btn btn-outline-warning" type="submit">Зарегестрироваться</button>
+
+
+
+
+
+                </EditForm>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+@code {
+    UserViewModel userModel = new UserViewModel();
+
+    string fileStatys;
+
+    FilesManageDataLayer.Models.FileModel fileLoad;
+
+    string loginStatus;
+
+    string styleData;
+
+    bool resultCheckLogin;
+
+    private async Task Registering()
+    {
+        if(userModel.AvatarPath == null)
+        {
+            userModel.AvatarPath = "Files\\Photos\\default.jpeg";
+        }
+        if (!resultCheckLogin) { 
+            var result  =  await authServ.Register(userModel);
+       
+            if (result.Successful)
+            {
+                UriHelper.NavigateTo("/loginControl");
+            }
+        }
+    }
+
+    private Task checkLogin()
+    {
+        resultCheckLogin = userServ.CheckLogin(userModel.Login);
+        if (!resultCheckLogin)
+        {
+            styleData = "color:green";
+            loginStatus = "Логин свободен";
+        }
+        else
+        {
+            styleData = "color:red";
+            loginStatus = "Логин занят";
+        }
+        return Task.CompletedTask;
+    }
+
+    async Task HandleSelection(IFileListEntry[] files)
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            fileLoad= await fileServ.CreateFile(file);
+            fileStatys = $"Загрузка файла {file.Name} завершена";
+            userModel.AvatarPath = fileLoad.Path;
+        }
+    }
+}

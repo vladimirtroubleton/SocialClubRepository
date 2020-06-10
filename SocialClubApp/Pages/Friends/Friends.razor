@@ -1,0 +1,79 @@
+﻿@page "/friends"
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FeedsDataLayer.FeedViewModel
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+
+@if (friendsList == null)
+{
+    <div class="container">
+        У вас пока нет информаторов , давайте <a class="btn btn-outline-success" href="/addfriend">Добавим</a>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+        <a class="btn btn-outline-success" href="/addfriend"> А давайте еще добавим информаторов</a>
+        </div>
+          <hr/>
+            @foreach (var user in friendsList)
+            {
+                <div class="card  ">
+
+                    <img class="card-img-top img-card mx-auto avatar" src="@user.AvatarPath" alt="Фото профиля" />
+                    <div class="card-body">
+                        <p class="card-title text-center">
+                            Профиль пользователя:
+                        </p>
+                        <h4 class="card-title text-center">
+                            @user.Login
+                        </h4>
+
+                        <p class="card-title text-center">
+                            Имя и фамилия:
+                        </p>
+                        <h4 class="card-title text-center">
+                            @user.Name @user.Surname
+                        </h4>
+
+                        
+
+                        <p class="card-title text-center">
+                            Почта пользователя:
+                        </p>
+                        <h4 class="card-title text-center">
+                            @user.Email
+                        </h4>
+                     
+                    </div>
+
+                </div>
+                <hr/>
+            }
+     </div>
+     
+    
+}
+
+
+@code {
+    List<UserModel> friendsList;
+    UserModel currentUser;
+    string[] friendsLogins;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        friendsLogins =await socialServ.GetFriendsLoginArray(currentUser);
+        friendsList = await socialServ.GetFriendsByLoginsArray(currentUser , friendsLogins);
+    }
+
+
+}

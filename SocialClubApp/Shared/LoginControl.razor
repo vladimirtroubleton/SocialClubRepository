@@ -1,0 +1,73 @@
+﻿@page "/loginControl"
+@using AuthDataLayer.Models
+@using AuthDataLayer.ViewModels
+
+@inject HttpClient Http
+@inject NavigationManager UriHelper
+@inject SocialClubApp.Services.IAuthService authServ
+    <div class="container">
+        <AuthorizeView>
+            <Authorized Context=" Auth ">
+                @Auth.User.Identity.Name
+            </Authorized>
+            <NotAuthorized Context=" NoAuth ">
+                <div class="row">
+                    <div class="col-5 mx-auto text-center">
+                        <p style=" @style">@logRes.Error</p>
+                        <EditForm Model="@userLoginModel" OnValidSubmit="LogIn">
+                            <DataAnnotationsValidator />
+                            <ValidationSummary Model="@userLoginModel" />
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Введите логин</label>
+                                <InputText @bind-Value="userLoginModel.Login" class="form-control" />
+                                <ValidationMessage For="@(() => userLoginModel.Login)" />
+                            </div>
+
+                            <div style="" class="form-group">
+                                <label class="control-label">Введите пароль</label>
+                                <InputText @bind-Value="userLoginModel.Password" class="form-control" type="password" />
+                                <ValidationMessage For="@(() => userLoginModel.Password)" />
+                            </div>
+
+
+                            <button class="ml-md-auto btn btn-outline-success" type="submit">
+                                Вход
+                            </button>
+
+
+
+
+
+
+                        </EditForm>
+                        <a class="btn btn-outline-primary" style="margin-top:10px;" href="/Account/Register">Регистрация</a>
+                    </div>
+
+                </div>
+                   
+                
+            </NotAuthorized>
+        </AuthorizeView>
+    </div>
+    @code {
+        LoginViewModel userLoginModel = new LoginViewModel();
+
+        string style="visibility:hidden ; color:red";
+
+        AuthDataLayer.ResultModels.LoginResult logRes = new AuthDataLayer.ResultModels.LoginResult();
+
+        private async Task LogIn()
+        {
+            logRes = await authServ.Login(userLoginModel);
+            if (logRes.Successful)
+            {
+                UriHelper.NavigateTo("/");
+            }
+            style = "color:red";
+           
+        }
+
+    }

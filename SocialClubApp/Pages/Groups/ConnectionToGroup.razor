@@ -1,0 +1,47 @@
+﻿@page "/connectGroup"
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FriendsAndSocailDataLayer.Models
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+    <div class="container">
+        <div class="row">
+            <a href="/addGroup">Добавить новое объеденение</a>
+        </div>
+        <hr />
+        @if (groups != null) { 
+                @foreach (var group in groups)
+                {
+                    <div class="row">
+                        <div class="col-4">Название группы: <h4>@group.NameGroup</h4></div>
+                        <div class="col-4">Логин владельца: <h4>@group.CreatorLogin</h4></div>
+                        <div class="col-4">Количество товарищей: <h4>@group.CountUsersInGroup</h4></div>
+                    </div>
+                }
+        }
+        else
+        {
+           <p> Тут пока пусто</p>
+        }
+    </div>
+
+@code {
+    UserModel currentUser;
+    FriendsAndSocailDataLayer.Models.GroupConnect[] groupsConnectUser;
+    GroupModel[] groups;
+    int[] groupConnectIds;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        groupsConnectUser = await socialServ.GetGroupIdsByUser(currentUser);
+        groups  = await socialServ.GetAllGroups();
+        
+
+    }
+}

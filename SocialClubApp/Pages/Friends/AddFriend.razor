@@ -1,0 +1,66 @@
+﻿@page "/addfriend"
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FeedsDataLayer.FeedViewModel
+@using System.Linq;
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.FeedsService feedServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+@if (allUsersInSystem != null)
+{
+    <div class="container">
+        @foreach (var user in allUsersInSystem)
+        {
+                <div class="row">
+                    <div class="col-4"><img src="@user.AvatarPath" alt="Avatar" /></div>
+                    <div class="col-4 text-center vcenter"><h4> @user.Name @user.Surname</h4></div>
+                    <div class="col-4 text-center">
+                        @if (havingFriends.Contains(user.Login))
+                        {
+                            <button class="btn btn-outline-primary">Уже подписаны</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-outline-success"
+                                    @onclick="@(e => AddFriendly(e, user.Login))">
+                                Добавить
+                            </button>
+                        }
+
+                    </div>
+                </div>
+                <hr/>
+        }
+        </div>
+}
+else
+{
+    <div class="container">
+
+    </div>
+}
+
+@code {
+    UserModel[] allUsersInSystem;
+    UserModel currentUser;
+    List<string> havingFriends;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        allUsersInSystem = await userServ.GetUsers(currentUser.Login);
+        var arrLogin =  await socialServ.GetFriendsLoginArray(currentUser);
+        havingFriends = arrLogin.ToList();
+
+    }
+    public async  Task AddFriendly(MouseEventArgs e,string login)
+    {
+        await socialServ.AddFriend(currentUser , login);
+        havingFriends.Add(login);
+    }
+}

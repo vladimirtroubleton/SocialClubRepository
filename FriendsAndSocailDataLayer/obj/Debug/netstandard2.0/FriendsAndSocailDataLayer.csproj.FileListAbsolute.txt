@@ -1,0 +1,8 @@
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.deps.json
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.dll
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.AssemblyInfoInputs.cache
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.AssemblyInfo.cs
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.pdb
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.csprojAssemblyReference.cache
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.dll
+D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.pdb

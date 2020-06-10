@@ -73,5 +73,15 @@ namespace SocialClubApp.Services.Socials
             groupModel.CountUsersInGroup = 1;
             await groupRepository.CreateGroup(groupModel);
         }
+
+        public async Task<GroupModel[]> GetGroupsByConnectRecords(GroupConnect[] connects)
+        {
+            List<GroupModel> groupModels = new List<GroupModel>();
+            foreach(var connect in connects)
+            {
+                groupModels.Add(await groupRepository.GetGroupById(connect.GroupId));
+            }
+            return groupModels.ToArray();
+        }
     }
 }

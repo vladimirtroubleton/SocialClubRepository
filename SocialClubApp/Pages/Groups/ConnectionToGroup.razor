@@ -11,18 +11,19 @@
 
     <div class="container">
         <div class="row">
-            <a href="/addGroup">Добавить новое объеденение</a>
+            <a href="/addGroup" class="btn btn-outline-dark">Добавить новое объеденение</a>
         </div>
         <hr />
         @if (groups != null) { 
                 @foreach (var group in groups)
-                {
+                 {
                     <div class="row">
-                        <div class="col-4">Название группы: <h4>@group.NameGroup</h4></div>
-                        <div class="col-4">Логин владельца: <h4>@group.CreatorLogin</h4></div>
-                        <div class="col-4">Количество товарищей: <h4>@group.CountUsersInGroup</h4></div>
+                        <div class="col-4">Название группы: <p>@group.NameGroup</p></div>
+                        <div class="col-4">Логин владельца: <p>@group.CreatorLogin</p></div>
+                        <div class="col-4">Количество товарищей: <p>@group.CountUsersInGroup</p></div>
+                        <div class="col-4"><a href="#" class="btn btn-outline-danger">Присоеденится</a></div>
                     </div>
-                }
+                 }
         }
         else
         {

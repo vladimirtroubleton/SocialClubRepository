@@ -21,16 +21,12 @@
 
 
                     <div class="form-group">
-                        <label class="control-label">Введите заголовок</label>
+                        <label class="control-label">Введите имя группы</label>
                         <InputText @bind-Value="group.NameGroup" class="form-control" />
                         <ValidationMessage For="@(() => group.NameGroup)" />
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label">Что хотите рассказать?</label>
-                        <InputTextArea @bind-Value="group.CreatorLogin" class="form-control" />
-                        <ValidationMessage For="@(() => group.CreatorLogin)" />
-                    </div>
+                   
                     
 
 
@@ -60,6 +56,7 @@
 
     public async Task CreateGroup()
     {
+        group.CreatorLogin = currentUser.Login;
         await socialServ.CreateGroup(group);
     }
 }

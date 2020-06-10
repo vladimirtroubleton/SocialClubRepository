@@ -21,18 +21,21 @@
 }
 else
 {
-    <div class="container">
-        @foreach (var group in groups)
+<div class="container">
+    <a href="/connectGroup" class="btn btn-outline-secondary">Присоеденится к другим объеденениям!</a>
+    <hr />
+    @foreach (var group in groups)
+    {
         {
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        @group.NameGroup
-                    </div>
-                </div>
+            <div class="row">
+                <div class="col-4">Название группы: <h4>@group.NameGroup</h4></div>
+                <div class="col-4">Логин владельца: <h4>@group.CreatorLogin</h4></div>
+                <div class="col-4">Количество товарищей: <h4>@group.CountUsersInGroup</h4></div>
             </div>
+            <hr />
         }
-    </div>
+    }
+</div>
 }
 
 
@@ -46,6 +49,6 @@ else
         var authState = await authProvider.GetAuthenticationStateAsync();
         currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
         groupsConnectUser = await socialServ.GetGroupIdsByUser(currentUser);
-
+        groups = await socialServ.GetGroupsByConnectRecords(groupsConnectUser);
     }
 }

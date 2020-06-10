@@ -25,6 +25,8 @@ namespace FriendsAndSocailDataLayer.Repositories
                 context.Groups.Add(group);
             }
             await context.SaveChangesAsync();
+            var createdGroup = context.Groups.Where(x=> x.CreatorLogin == group.CreatorLogin && x.NameGroup == group.NameGroup && x.CountUsersInGroup == group.CountUsersInGroup).FirstOrDefault();
+            await CreateGroupConnect(createdGroup.Id , createdGroup.CreatorLogin);
         }
 
         public async Task DeleteGroup(GroupModel group)

@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {}
+    "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
         "projectName": "FriendsAndSocailDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -67,7 +63,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

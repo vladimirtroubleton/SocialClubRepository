@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {}
+    "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
         "projectName": "AuthDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -52,7 +48,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -71,7 +67,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

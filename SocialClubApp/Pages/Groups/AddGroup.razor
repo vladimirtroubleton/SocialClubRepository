@@ -58,5 +58,6 @@
     {
         group.CreatorLogin = currentUser.Login;
         await socialServ.CreateGroup(group);
+        uriHelper.NavigateTo("/connectGroup");
     }
 }

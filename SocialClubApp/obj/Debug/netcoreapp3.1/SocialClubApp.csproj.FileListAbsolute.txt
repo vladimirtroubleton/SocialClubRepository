@@ -566,3 +566,17 @@ D:\Projects\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDecl
 D:\Projects\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Groups\ConnectionToGroup.razor.g.cs
 D:\Projects\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\AddGroup.razor.g.cs
 D:\Projects\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\ConnectionToGroup.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\FriendsAndSocailDataLayer.dll
+D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\FriendsAndSocailDataLayer.pdb
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Friends\AddFriend.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Friends\Friends.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Groups\AddGroup.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Groups\ConnectionToGroup.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Groups\Groups.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Friends\AddFriend.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Friends\Friends.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\AddGroup.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\ConnectionToGroup.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\Groups.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

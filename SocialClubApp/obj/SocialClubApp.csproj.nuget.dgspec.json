@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj": {}
+    "D:\\Release\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
         "projectName": "AuthDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -52,7 +48,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -71,26 +67,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj",
         "projectName": "FeedsDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -115,7 +107,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -134,26 +126,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj",
         "projectName": "FilesManageDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -178,7 +166,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -201,26 +189,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
+    "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
         "projectName": "FriendsAndSocailDataLayer",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -268,26 +252,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj": {
+    "D:\\Release\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj",
+        "projectUniqueName": "D:\\Release\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj",
         "projectName": "SocialClubApp",
-        "projectPath": "D:\\Projects\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj",
-        "packagesPath": "C:\\Users\\it013\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SocialClubRepository\\SocialClubApp\\obj\\",
+        "projectPath": "D:\\Release\\SocialClubRepository\\SocialClubApp\\SocialClubApp.csproj",
+        "packagesPath": "C:\\Users\\vladimirtroubleton\\.nuget\\packages\\",
+        "outputPath": "D:\\Release\\SocialClubRepository\\SocialClubApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\it013\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladimirtroubleton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -299,17 +279,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
-                "projectPath": "D:\\Projects\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj"
+              "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj": {
+                "projectPath": "D:\\Release\\SocialClubRepository\\AuthDataLayer\\AuthDataLayer.csproj"
               },
-              "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj": {
-                "projectPath": "D:\\Projects\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj"
+              "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj": {
+                "projectPath": "D:\\Release\\SocialClubRepository\\FeedsDataLayer\\FeedsDataLayer.csproj"
               },
-              "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj": {
-                "projectPath": "D:\\Projects\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj"
+              "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj": {
+                "projectPath": "D:\\Release\\SocialClubRepository\\FilesManageDataLayer\\FilesManageDataLayer.csproj"
               },
-              "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
-                "projectPath": "D:\\Projects\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj"
+              "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj": {
+                "projectPath": "D:\\Release\\SocialClubRepository\\FriendsAndSocailDataLayer\\FriendsAndSocailDataLayer.csproj"
               }
             }
           }
@@ -345,11 +325,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -374,7 +354,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

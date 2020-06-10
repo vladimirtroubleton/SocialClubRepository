@@ -13,10 +13,6 @@ namespace AuthDataLayer
         {
             Database.EnsureCreated();
         }
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<UserModel>().HasData(new UserModel[] { new UserModel { Surname = test , } });
-        //    base.OnModelCreating(modelBuilder);
-        //}
+     
     }
 }

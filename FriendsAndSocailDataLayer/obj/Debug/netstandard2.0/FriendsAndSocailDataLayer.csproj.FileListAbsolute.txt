@@ -6,3 +6,12 @@ D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard
 D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.csprojAssemblyReference.cache
 D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.dll
 D:\Projects\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.pdb
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.deps.json
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.dll
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\bin\Debug\netstandard2.0\FriendsAndSocailDataLayer.pdb
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.csprojAssemblyReference.cache
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.csproj.CoreCompileInputs.cache
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.AssemblyInfoInputs.cache
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.AssemblyInfo.cs
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.dll
+D:\Release\SocialClubRepository\FriendsAndSocailDataLayer\obj\Debug\netstandard2.0\FriendsAndSocailDataLayer.pdb

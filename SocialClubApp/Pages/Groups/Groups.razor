@@ -1,0 +1,60 @@
+﻿@page "/groups"
+<h4>Ваши объеденения</h4>
+<hr />
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FeedsDataLayer.FeedViewModel
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+@if (groups == null)
+{
+    <div class="container">
+        <p> Вы еще не присоеденились ни к одному обьеденению</p>
+        <a href="/connectGroup" class="btn btn-outline-secondary">Присоеденится !</a>
+    </div>
+
+}
+else
+{
+<div class="container">
+    <a href="/connectGroup" class="btn btn-outline-secondary">Присоеденится к другим объеденениям!</a>
+    <hr />
+            @foreach (var item in groups)
+            {
+                <div class="card">
+
+                    <div class="card-body text-center">
+
+                        <div class="card-text"><p class="font-weight-bold">Название группы</p></div>
+                        <div class="card-title">@item.NameGroup</div>
+                        <div class="card-text"><p class="font-weight-bold">Владелец</p></div>
+                        <div class="card-title">@item.CreatorLogin</div>
+                        <div class="card-text"><p class="font-weight-bold">Количество товарищей</p></div>
+                        <div class="card-title">@item.CountUsersInGroup</div>
+                    </div>
+                </div>
+                <hr/>
+             }
+          
+</div>
+} 
+
+
+
+@code {
+    UserModel currentUser;
+    FriendsAndSocailDataLayer.Models.GroupConnect[] groupsConnectUser;
+    FriendsAndSocailDataLayer.Models.GroupModel[] groups;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        groupsConnectUser = await socialServ.GetGroupIdsByUser(currentUser);
+        groups = await socialServ.GetGroupsByConnectRecords(groupsConnectUser);
+    }
+}

@@ -1,0 +1,70 @@
+﻿@page "/connectGroup"
+@using AuthDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FriendsAndSocailDataLayer.Models
+@inject SocialClubApp.Services.IAuthService authServ
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+
+<div class="container">
+    <div class="row">
+        <a href="/addGroup" class="btn btn-outline-dark">Добавить новое объеденение</a>
+    </div>
+    <hr />
+    @if (groups != null)
+    {
+        @foreach (var group in groups)
+        {
+            <div class="row">
+                <div class="col-4">Название группы: <p>@group.NameGroup</p></div>
+                <div class="col-4">Логин владельца: <p>@group.CreatorLogin</p></div>
+                <div class="col-4">Количество товарищей: <p>@group.CountUsersInGroup</p></div>
+                <div class="col-4">
+                    @if (groupConnectIds.Contains(group.Id))
+                    {
+                        <button class="btn btn-outline-info">
+                            Вступили уже
+                        </button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-outline-success"
+                                @onclick="@(e => CreateConnect(e, group.Id))">
+                            Присоедениться
+                        </button>
+                    }
+
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p> Тут пока пусто</p>
+    }
+</div>
+
+@code {
+    UserModel currentUser;
+    GroupConnect[] groupsConnectUser;
+    GroupModel[] groups;
+    List<int> groupConnectIds;
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        groupsConnectUser = await socialServ.GetGroupIdsByUser(currentUser);
+        groups = await socialServ.GetAllGroups();
+        groupConnectIds = groupsConnectUser.Select(x=> x.Id).ToList();
+
+    }
+    public async Task CreateConnect(EventArgs e, int id)
+    {
+        await socialServ.CreateGroupConnect(id, currentUser);
+        groupConnectIds.Add(id);
+        
+    }
+}

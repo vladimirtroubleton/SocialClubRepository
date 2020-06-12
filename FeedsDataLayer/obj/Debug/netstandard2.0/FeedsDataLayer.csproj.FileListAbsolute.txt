@@ -1,0 +1,17 @@
+D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.deps.json
+D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.dll
+D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.csprojAssemblyReference.cache
+D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.AssemblyInfoInputs.cache
+D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.AssemblyInfo.cs
+D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.pdb
+D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.dll
+D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.pdb
+D:\Release\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.deps.json
+D:\Release\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.dll
+D:\Release\SocialClubRepository\FeedsDataLayer\bin\Debug\netstandard2.0\FeedsDataLayer.pdb
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.csprojAssemblyReference.cache
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.csproj.CoreCompileInputs.cache
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.AssemblyInfoInputs.cache
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.AssemblyInfo.cs
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.dll
+D:\Release\SocialClubRepository\FeedsDataLayer\obj\Debug\netstandard2.0\FeedsDataLayer.pdb

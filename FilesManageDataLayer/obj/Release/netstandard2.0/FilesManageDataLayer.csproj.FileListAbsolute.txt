@@ -1,0 +1,8 @@
+D:\Projects\SocialClubRepository\FilesManageDataLayer\bin\Release\netstandard2.0\FilesManageDataLayer.deps.json
+D:\Projects\SocialClubRepository\FilesManageDataLayer\bin\Release\netstandard2.0\FilesManageDataLayer.dll
+D:\Projects\SocialClubRepository\FilesManageDataLayer\bin\Release\netstandard2.0\FilesManageDataLayer.pdb
+D:\Projects\SocialClubRepository\FilesManageDataLayer\obj\Release\netstandard2.0\FilesManageDataLayer.csprojAssemblyReference.cache
+D:\Projects\SocialClubRepository\FilesManageDataLayer\obj\Release\netstandard2.0\FilesManageDataLayer.AssemblyInfoInputs.cache
+D:\Projects\SocialClubRepository\FilesManageDataLayer\obj\Release\netstandard2.0\FilesManageDataLayer.AssemblyInfo.cs
+D:\Projects\SocialClubRepository\FilesManageDataLayer\obj\Release\netstandard2.0\FilesManageDataLayer.dll
+D:\Projects\SocialClubRepository\FilesManageDataLayer\obj\Release\netstandard2.0\FilesManageDataLayer.pdb

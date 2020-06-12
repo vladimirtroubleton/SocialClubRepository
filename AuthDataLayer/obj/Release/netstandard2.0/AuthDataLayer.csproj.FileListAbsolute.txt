@@ -1,8 +1,0 @@
-D:\Projects\SocialClubRepository\AuthDataLayer\bin\Release\netstandard2.0\AuthDataLayer.deps.json
-D:\Projects\SocialClubRepository\AuthDataLayer\bin\Release\netstandard2.0\AuthDataLayer.dll
-D:\Projects\SocialClubRepository\AuthDataLayer\bin\Release\netstandard2.0\AuthDataLayer.pdb
-D:\Projects\SocialClubRepository\AuthDataLayer\obj\Release\netstandard2.0\AuthDataLayer.csprojAssemblyReference.cache
-D:\Projects\SocialClubRepository\AuthDataLayer\obj\Release\netstandard2.0\AuthDataLayer.AssemblyInfoInputs.cache
-D:\Projects\SocialClubRepository\AuthDataLayer\obj\Release\netstandard2.0\AuthDataLayer.AssemblyInfo.cs
-D:\Projects\SocialClubRepository\AuthDataLayer\obj\Release\netstandard2.0\AuthDataLayer.dll
-D:\Projects\SocialClubRepository\AuthDataLayer\obj\Release\netstandard2.0\AuthDataLayer.pdb

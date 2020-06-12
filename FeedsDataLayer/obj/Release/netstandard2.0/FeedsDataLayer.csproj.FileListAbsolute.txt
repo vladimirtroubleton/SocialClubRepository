@@ -1,8 +1,0 @@
-D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Release\netstandard2.0\FeedsDataLayer.deps.json
-D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Release\netstandard2.0\FeedsDataLayer.dll
-D:\Projects\SocialClubRepository\FeedsDataLayer\bin\Release\netstandard2.0\FeedsDataLayer.pdb
-D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Release\netstandard2.0\FeedsDataLayer.csprojAssemblyReference.cache
-D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Release\netstandard2.0\FeedsDataLayer.AssemblyInfoInputs.cache
-D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Release\netstandard2.0\FeedsDataLayer.AssemblyInfo.cs
-D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Release\netstandard2.0\FeedsDataLayer.dll
-D:\Projects\SocialClubRepository\FeedsDataLayer\obj\Release\netstandard2.0\FeedsDataLayer.pdb

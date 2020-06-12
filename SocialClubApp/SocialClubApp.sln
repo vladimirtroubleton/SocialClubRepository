@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilesManageDataLayer", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeedsDataLayer", "..\FeedsDataLayer\FeedsDataLayer.csproj", "{D94468A3-54E0-4E02-B770-3123CF016E44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendsAndSocailDataLayer", "..\FriendsAndSocailDataLayer\FriendsAndSocailDataLayer.csproj", "{6CCABC2E-6382-421F-AC58-171516CB53F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendsAndSocailDataLayer", "..\FriendsAndSocailDataLayer\FriendsAndSocailDataLayer.csproj", "{6CCABC2E-6382-421F-AC58-171516CB53F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

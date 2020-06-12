@@ -518,7 +518,6 @@ D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDecla
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Feeds\AddFeed.razor.g.cs
-D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\LoginControl.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -534,7 +533,6 @@ D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Page
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Feeds\AddFeed.razor.g.cs
-D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Shared\LoginControl.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
@@ -580,3 +578,7 @@ D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Page
 D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Groups\Groups.razor.g.cs
 D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Release\SocialClubRepository\SocialClubApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Comments\FeedComments.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Feeds\Index.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Comments\FeedComments.razor.g.cs
+D:\Release\SocialClubRepository\SocialClubApp\obj\Debug\netcoreapp3.1\Razor\Pages\Feeds\Index.razor.g.cs

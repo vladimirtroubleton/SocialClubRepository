@@ -1,0 +1,140 @@
+﻿@page "/comments/{id}"
+@inject AuthenticationStateProvider authProvider
+@inject SocialClubApp.Services.IAuthService authServ
+@inject NavigationManager uriHelper
+@inject SocialClubApp.Services.UserService userServ
+@inject SocialClubApp.Services.FilesService fileServ
+@inject SocialClubApp.Services.FeedsService feedServ
+@inject SocialClubApp.Services.Feed.CommentService commentServ
+@inject SocialClubApp.Services.Socials.SocialService socialServ
+@using AuthDataLayer.Models
+@using FeedsDataLayer.Models
+@using SocialClubApp.StaticUtils
+@using FeedsDataLayer.FeedViewModel
+@if (feedView != null)
+{
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-12 mx-auto">
+
+            <div class="card">
+
+                <div class="card-body text-center">
+
+                    <div class="card-text"><p class="font-weight-bold">Заголовок</p></div>
+                    <div class="card-title">@feedView.Title</div>
+                    <div class="card-text"><p class="font-weight-bold">Новость</p></div>
+                    <div class="card-title">@feedView.Feed</div>
+                    <div class="card-text"><p class="font-weight-bold">Автор</p></div>
+                    <div class="card-title">@feedView.Author</div>
+                    <div class="card-text"><p class="font-weight-bold">Прикрепленные материалы:</p></div>
+                </div>
+                <div class="col-10 mx-auto align-content-center">
+                    @foreach (var path in feedView.PhotoPaths)
+                    {
+
+                        <img src="@path" class="newsPhoto" alt="Alternate Text" />
+
+                    }
+                </div>
+            </div>
+            <hr />
+            <EditForm Model="@commentNew" OnValidSubmit="CreateComment">
+            <DataAnnotationsValidator />
+            <ValidationSummary Model="@commentNew" />
+
+
+
+            <div class="form-group">
+                <label class="control-label">Введите свой комментарий</label>
+                <InputText @bind-Value="commentNew.Comment" class="form-control" />
+                <ValidationMessage For="@(() => commentNew.Comment)" />
+            </div>
+
+            
+
+
+
+                <button class="ml-md-auto btn btn-outline-warning" type="submit">Добавить</button>
+
+
+
+
+
+            </EditForm>
+            <hr />
+            @if (comments != null)
+            {
+                @foreach (var comment in comments)
+                {
+                    <div class="card">
+                        <div class=" card-body">
+                            <div class="card-title">
+                                @comment.CommentAvtorLogin
+                            </div>
+                            <div class="card-title">
+                                @comment.Comment
+                            </div>
+                            <div class="card-title">
+                                @comment.Data
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr style="color:green" />
+                }
+            }
+        </div>
+    </div>
+</div>
+}
+@code
+{
+    [Parameter]
+    public string id { get; set; }
+    FeedModel feed;
+    FeedViewModel feedView;
+    UserModel currentUser;
+    List<CommentModel> comments;
+    CommentModel commentNew = new CommentModel();
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        currentUser = await userServ.GetCurrentUser(authState.User.Identity.Name);
+        if (currentUser == null) { await authServ.Logout(); uriHelper.NavigateTo("/loginControl"); return; }
+
+        feed = await feedServ.GetFeed(Guid.Parse(id));
+        comments = await commentServ.GetCommentByGroupId(Guid.Parse(id));
+        await GetFilesByFeed();
+    }
+
+
+    public async Task GetFilesByFeed()
+    {
+
+
+        var files = await fileServ.GetConnectionsFileByFeed(feed.Id);
+        feedView = new FeedViewModel
+        {
+            Id = feed.Id,
+            Feed = feed.Feed,
+            Author = feed.Author,
+            Title = feed.Title,
+            PhotoPaths = files.Select(x => x.Path).ToArray()
+        };
+    }
+    public async Task CreateComment()
+    {
+        commentNew.CommentAvtorLogin = currentUser.Login;
+        commentNew.GroupId = Guid.Parse(id);
+        commentNew.Data = DateTime.Today;
+        await commentServ.CreateComment(commentNew);
+        comments.Add(commentNew);
+        commentNew = new CommentModel();
+
+    }
+}
+}

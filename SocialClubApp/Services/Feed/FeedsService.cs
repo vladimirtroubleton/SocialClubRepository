@@ -35,6 +35,11 @@ namespace SocialClubApp.Services
         {
             return await filesRepository.GetConnectionsfilesByFeedId(idFeed);
         }
-        
+
+        public async Task<FeedModel> GetFeed(Guid idFeed)
+        {
+            return await feedsRepository.GetFeedById(idFeed);
+        }
+
     }
 }

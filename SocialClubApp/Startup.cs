@@ -32,6 +32,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.JSInterop;
 using SocialClubApp.Data;
 using SocialClubApp.Services;
+using SocialClubApp.Services.Feed;
 using SocialClubApp.Services.Socials;
 
 namespace SocialClubApp
@@ -99,12 +100,14 @@ namespace SocialClubApp
             services.AddScoped<IFeedsRepository, FeedsRepository>();
             services.AddScoped<IFriendsRepository, FriendsRepository>();
             services.AddScoped<IGroupRepository, GroupRepository>();
+            services.AddScoped<ICommentRepository, CommentRepository>();
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<FilesService>();
             services.AddScoped<UserService>();
             services.AddScoped<FeedsService>();
             services.AddScoped<SocialService>();
+            services.AddScoped<CommentService>();
 
             services.AddHttpClient();
             services.AddScoped<HttpClient>();
